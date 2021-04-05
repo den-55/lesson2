@@ -1,11 +1,11 @@
 package com.company;
 
 public class Human {
-    private String name;
-    private int age;
-    private int weight;
-    private double height;
-    private String profession;
+    String name;
+    int age;
+    int weight;
+    double height;
+    String profession;
 
     public Human(String name, int age, int weight, double height, String profession) {
         this.name = name;
@@ -49,6 +49,32 @@ public class Human {
             return " (Очень резкое ожирение). ";
         }
     }
+
+    public void toSleep (Room room) {
+        System.out.println(name + " спит в " + room);
+    }
+
+    public void toBeAfraid (Giraffe giraffe) {
+        System.out.println(name + " боится " + giraffe);
+    }
+
+    public void installAlarm (House house) {
+        System.out.println(name + " устанавливает сигнализцию в " + house + " по адресу: " + house.address);
+    }
+
+    public void toTeach (Girl girl) {
+        System.out.println(name + " обучает " + girl.name);
+    }
+
+    public void beFriends (Boy boy) {
+        System.out.println(name + " дружит с " + boy.name);
+    }
+
+    public void toSell (Animal animal) {
+        System.out.println(name + " продаёт " + animal);
+    }
+
+
 
     public void getInfo() {
         System.out.println(sayHello() + sayAge() + "Мой рост - " + height + " м, вес " + weight + " кг. " + "Мой индекс массы тела - " + getBodyMassIndex() + bodyMassIndexDescription() + professionDescription());

@@ -2,15 +2,15 @@ package com.company;
 
 
 public class Room {
-    private int length;
-    private int height;
-    private int width;
-    private String owner;
-    private boolean window;
+    int length;
+    int height;
+    int width;
+    String owner;
+    boolean window;
 
-    public Room(int length, int heigh, int width, String owner, boolean window) {
+    public Room(int length, int height, int width, String owner, boolean window) {
         this.length = length;
-        this.height = heigh;
+        this.height = height;
         this.width = width;
         this.owner = owner;
         this.window = window;
@@ -33,6 +33,14 @@ public class Room {
             return "В комнате есть окно. ";
         }
         return "В комнате окон нет. ";
+    }
+
+    public void protect (Room room, Human human) {
+        System.out.println(room + " защищает " + human + " от дождя");
+    }
+
+    public void giveWarm (Room room, Boy boy) {
+        System.out.println(room + " даёт " + boy + " тепло");
     }
 
     public void getInfo() {

@@ -1,11 +1,11 @@
 package com.company;
 
 public class Giraffe {
-    private int age;
-    private int height;
-    private int weight;
-    private int maxRunningSpeed;
-    private boolean livesInTheWild;
+    int age;
+    int height;
+    int weight;
+    int maxRunningSpeed;
+    boolean livesInTheWild;
 
     public Giraffe(int age, int height, int weight, int maxRunningSpeed, boolean livesInTheWild) {
         this.age = age;
